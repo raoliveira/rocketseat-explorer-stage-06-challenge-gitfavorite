@@ -129,7 +129,6 @@ table thead {
 }
 
 table tbody tr {
-    height: 10.4rem;
     background: rgba(6, 22, 27, 0.5);
 
 }
@@ -143,12 +142,6 @@ table tbody tr:nth-child(even) {
 
 }
 
-td.user img {
-    width: 5rem;
-    height: 5rem;
-    object-fit: cover;
-    border-radius: 50%;
-}
 
 .notfound td{
     text-align: center;
@@ -192,4 +185,35 @@ td.user img {
 
 table td {
     font-size: 2.0rem;
+}
+
+/* thumb user*/
+td.user {
+    height: 10.4rem;
+
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 1rem 0 4rem;
+}
+
+td.user a {
+    line-height: 120%;
+    color: #E1E1E6;
+    text-decoration: none;
+}
+td.user p {
+    font-weight: bold;
+}
+td.user span:before {
+    content: '/';    
+
 }
