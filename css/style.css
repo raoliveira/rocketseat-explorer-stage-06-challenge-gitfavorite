@@ -187,6 +187,16 @@ table td {
     font-size: 2.0rem;
 }
 
+th {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 160%;
+}
+
+th:first-child {
+    padding-left: 4rem;
+}
 /* thumb user*/
 td.user {
     height: 10.4rem;
