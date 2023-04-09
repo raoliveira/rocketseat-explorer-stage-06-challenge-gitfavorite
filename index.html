@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFav - Favoritos do Github</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div id="logo">
+                <img src="assets/Gitfav.svg" alt="Logo" srcset="">
+            </div>
+            <div class="search">
+                <label class="sr-only" for="input-search">Digite o Github username que quer favoritar</label>
+                <input id="input-search" type="text" placeholder="Digite o Github username que quer favoritar">
+                <button><span>&star;</span> favoritar</span> </button>
+            </div>
+
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Repositories</th>
+                        <th>Followers</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="notfound hide"><td colspan="4" ><div><img src="assets/Estrela.svg" alt="" srcset=""><span>Nenhum favorito ainda</span></div></td></tr>
+                    <tr>
+                        <td class="user">
+                            <img src="https://github.com/raoliveira.png" alt="" srcset="">
+                            <a href="http://github.com/raoliveira" target="_blank" rel="noopener noreferrer">
+                                <p>Ricardo</p>
+                                <span>raoliveira</span>
+                            </a>
+                        </td>
+                        <td class="repositories">123</td>
+                        <td class="followers">321</td>
+                        <td class="remove"><a href="">Remover</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="user">
+                            <img src="https://github.com/asdf.png" alt="" srcset="">
+                            <a href="http://github.com/asdf" target="_blank" rel="noopener noreferrer">
+                                <p>Asdf jkl</p>
+                                <span>Asdf</span>
+                            </a>
+                        </td>
+                        <td class="repositories">123</td>
+                        <td class="followers">321</td>
+                        <td class="remove"><a href="">Remover</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+    </div>
+</body>
+</html>
